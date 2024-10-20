@@ -1,16 +1,13 @@
-import { useState } from 'react'; // Import seulement useState
+import { useState } from 'react';
 
-const TravelCompanions = () => {
-  const [travelCompanion, setTravelCompanion] = useState("");
-
+export const QuestionThree = ({ travelCompanion, setTravelCompanion }) => {
   const handleInputChange = (event) => {
     setTravelCompanion(event.target.value);
   };
 
   return (
-    <div>
+    <div className="QuestionThree">
       <h2>Who do you usually prefer to travel with?</h2>
-      
       <label>
         <input 
           type="radio" 
@@ -21,7 +18,8 @@ const TravelCompanions = () => {
         />
         Family – I love family trips with kids or relatives.
       </label>
-      
+      <br />
+      <br />
       <label>
         <input 
           type="radio" 
@@ -32,8 +30,9 @@ const TravelCompanions = () => {
         />
         Friends – Adventures are more fun with friends.
       </label>
-      
-      <label>
+      <br />
+      <br />
+      <label className="OptionThree">
         <input 
           type="radio" 
           name="travelCompanion" 
@@ -43,8 +42,9 @@ const TravelCompanions = () => {
         />
         Solo – I enjoy discovering new places on my own.
       </label>
-      
-      <label>
+      <br />
+      <br />
+      <label className="OptionFour">
         <input 
           type="radio" 
           name="travelCompanion" 
@@ -54,10 +54,7 @@ const TravelCompanions = () => {
         />
         Partner – A romantic getaway is always ideal.
       </label>
-
-      {/* Add more JSX if needed */}
     </div>
   );
 };
 
-export default TravelCompanions;

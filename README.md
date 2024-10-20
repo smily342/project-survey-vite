@@ -24,7 +24,7 @@ npm i && code . && npm run dev
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+We made a plan of we wanted the user to experience the survey. And then we chose the theme of vacation which we split in 3 parts.
 
 ### View it live
 

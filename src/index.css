@@ -16,11 +16,19 @@ body {
   text-align: center;
 }
 
+/* styling for headings */
 h2 {
   color: #16423C;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
 }
+
+header {
+  background-color: #16423C;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
 
 h1 {
   color: #E9EFEC;
@@ -29,8 +37,75 @@ h1 {
 
 }
 
-header {
-  background-color: #16423C;
-  padding: 20px;
-  margin-bottom: 50px;
+/* styling for questions */
+
+.QuestionTwo{
+  margin-top: 70px;
+}
+
+
+select {
+  padding: 9px;
+    font-size: 16px;
+    border: 1px solid #16423C;
+    border-radius: 5px;
+    width: 90%;
+    margin-top: 10px;
+}
+
+select option {
+  color: #16423C;           
+  padding: 10px;         
+  font-size: 16px;
+}
+
+
+.QuestionThree{
+  margin-top: 70px;
+}
+
+
+label{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* submit button*/
+
+button{
+background-color: #16423C;
+color: #C4DAD2;
+padding: 20px;
+border: solid 5px;
+border-radius: 20px;
+width: 45%;
+margin-top: 50px;
+}
+
+
+button:hover {
+  cursor: pointer;
+  background: #C4DAD2;
+  color: #16423C;
+}
+
+
+.OptionThree{
+  margin-left: 16px;
+}
+
+.OptionFour{
+  margin-right: 18px;
+}
+
+/* responsive design for desktop */
+
+@media (min-width: 1024px) {
+select{
+  width: 20%;
+}
+
+button{
+  width: 15%;
+}
+
 }
