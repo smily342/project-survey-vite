@@ -1,5 +1,6 @@
-import { useState } from 'react'; // Import uniquement ce qui est nécessaire
+import { useState } from 'react'; // Import des hooks nécessaires
 import { QuestionOne } from "./components/QuestionOne.jsx"; // Import du composant QuestionOne
+import { QuestionTwo } from "./components/QuestionTwo.jsx"; // Import du composant QuestionTwo
 
 // Composant TravelCompanions
 const TravelCompanions = () => {
@@ -78,17 +79,21 @@ const TravelCompanions = () => {
   );
 };
 
-// Composant App pour inclure TravelCompanions et QuestionOne
+// Composant App pour inclure TravelCompanions, QuestionOne et QuestionTwo
 export const App = () => {
+  // Ajout d'un état pour gérer la sélection d'activités de voyage
+  const [travelActivity, setTravelActivity] = useState("");
+
   return (
     <div className="header-container">
       <header>
         <h1>Travel Preferences Survey</h1>
       </header>
 
-      {/* Rendre les composants TravelCompanions et QuestionOne */}
+      {/* Rendre les composants TravelCompanions, QuestionOne, et QuestionTwo */}
       <TravelCompanions /> 
       <QuestionOne />  {/* Renders the QuestionOne component */}
+      <QuestionTwo travelActivity={travelActivity} setTravelActivity={setTravelActivity} />  {/* Ajout de QuestionTwo avec gestion d'état */}
     </div>
   );
 };
