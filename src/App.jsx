@@ -5,10 +5,10 @@ import { QuestionThree } from "./components/QuestionThree.jsx";
 import Summary from "./components/Summary.jsx";
 
 export const App = () => {
-  // Renamed travelCompanion to questionThree for consistency
+  
   const [weatherPreference, setWeatherPreference] = useState("");
   const [travelActivity, setTravelActivity] = useState("");
-  const [questionThree, setQuestionThree] = useState(""); // Renamed state variable
+  const [questionThree, setQuestionThree] = useState(""); 
   const [showSummary, setShowSummary] = useState(false);
 
   const handleSubmit = (event) => {
@@ -26,7 +26,7 @@ export const App = () => {
         <Summary 
           weatherPreference={weatherPreference} 
           travelActivity={travelActivity} 
-          questionThree={questionThree} // Pass the correct state here
+          questionThree={questionThree} 
         />
       ) : (
         <form onSubmit={handleSubmit}>
