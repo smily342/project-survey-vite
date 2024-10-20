@@ -1,5 +1,7 @@
-import { useState } from 'react';
+import { useState } from 'react'; // Import uniquement ce qui est nécessaire
+import { QuestionOne } from "./components/QuestionOne.jsx"; // Import du composant QuestionOne
 
+// Composant TravelCompanions
 const TravelCompanions = () => {
   const [travelCompanion, setTravelCompanion] = useState("");
   const [submitted, setSubmitted] = useState(false);
@@ -76,4 +78,19 @@ const TravelCompanions = () => {
   );
 };
 
-export default TravelCompanions;
+// Composant App pour inclure TravelCompanions et QuestionOne
+export const App = () => {
+  return (
+    <div className="header-container">
+      <header>
+        <h1>Travel Preferences Survey</h1>
+      </header>
+
+      {/* Rendre les composants TravelCompanions et QuestionOne */}
+      <TravelCompanions /> 
+      <QuestionOne />  {/* Renders the QuestionOne component */}
+    </div>
+  );
+};
+
+export default App;
