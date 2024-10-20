@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import PropTypes from 'prop-types';
 
-export const QuestionThree = ({ travelCompanion, setTravelCompanion }) => {
+const QuestionThree = ({ travelCompanion, setTravelCompanion }) => {
   const handleInputChange = (event) => {
     setTravelCompanion(event.target.value);
   };
@@ -32,7 +32,7 @@ export const QuestionThree = ({ travelCompanion, setTravelCompanion }) => {
       </label>
       <br />
       <br />
-      <label className="OptionThree">
+      <label>
         <input 
           type="radio" 
           name="travelCompanion" 
@@ -44,7 +44,7 @@ export const QuestionThree = ({ travelCompanion, setTravelCompanion }) => {
       </label>
       <br />
       <br />
-      <label className="OptionFour">
+      <label>
         <input 
           type="radio" 
           name="travelCompanion" 
@@ -58,3 +58,10 @@ export const QuestionThree = ({ travelCompanion, setTravelCompanion }) => {
   );
 };
 
+// Add prop validation
+QuestionThree.propTypes = {
+  travelCompanion: PropTypes.string.isRequired,
+  setTravelCompanion: PropTypes.func.isRequired,
+};
+
+export default QuestionThree;
