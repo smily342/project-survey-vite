@@ -29,6 +29,7 @@ We made a plan of we wanted the user to experience the survey. And then we chose
 ### View it live
 
 Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://courageous-dieffenbachia-5268df.netlify.app/
 
 ## Instructions
 
