@@ -1,8 +1,8 @@
 :root {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,22 +10,22 @@ code {
   font-family: Arial, Helvetica, sans-serif;
 }
 body {
-  background-color: #E9EFEC;
+  background-color: #e9efec;
   text-align: center;
 }
 /* Styling for headings */
 h2 {
-  color: #16423C;
+  color: #16423c;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
 }
 header {
-  background-color: #16423C;
+  background-color: #16423c;
   padding: 20px;
   margin-bottom: 50px;
 }
 h1 {
-  color: #E9EFEC;
+  color: #e9efec;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 25px;
 }
@@ -36,13 +36,13 @@ h1 {
 select {
   padding: 9px;
   font-size: 16px;
-  border: 1px solid #16423C;
+  border: 1px solid #16423c;
   border-radius: 5px;
   width: 90%;
   margin-top: 10px;
 }
 select option {
-  color: #16423C;
+  color: #16423c;
   padding: 10px;
   font-size: 16px;
 }
@@ -54,8 +54,8 @@ label {
 }
 /* Submit button */
 .submit-button {
-  background-color: #16423C;
-  color: #C4DAD2;
+  background-color: #16423c;
+  color: #c4dad2;
   padding: 20px;
   border: solid 5px;
   border-radius: 20px;
@@ -64,8 +64,8 @@ label {
 }
 .submit-button:hover {
   cursor: pointer;
-  background: #C4DAD2;
-  color: #16423C;
+  background: #c4dad2;
+  color: #16423c;
 }
 
 @media (min-width: 1024px) {
